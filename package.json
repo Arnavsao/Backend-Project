@@ -1,7 +1,8 @@
 {
   "name": "project",
   "version": "1.0.0",
-  "description": "a project dedicated to backend",
+  "description": "a project dedicated to backend with javascript",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,5 +12,8 @@
     "backend"
   ],
   "author": "Arnav Sao",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
 }
