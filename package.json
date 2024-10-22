@@ -2,19 +2,21 @@
   "name": "project",
   "version": "1.0.0",
   "description": "a project dedicated to backend with javascript",
-  "type": "module",
-  "main": "index.js",
+  "type": "module",   
+  "main": "src/index.js",
   "scripts": {
-    "dev": "nodemon src/index.js"
+    "dev": "nodemon -r dotenv/config --experimental-json-modules src/index.js"
   },
-  "keywords": [
-    "javascript",
-    "backend"
-  ],
+  "keywords": ["javascript", "backend"],
   "author": "Arnav Sao",
   "license": "ISC",
   "devDependencies": {
     "nodemon": "^3.1.0",
     "prettier": "^3.3.3"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "mongoose": "^8.7.2"
   }
 }
