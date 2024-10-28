@@ -3,6 +3,7 @@ class ApiError extends Error {
         super(message);  // Call the parent `Error` constructor with the message
         this.statusCode = statusCode;
         this.data = null;
+        this.message = message;
         this.success = false;
         this.errors = errors;  // Correctly assign the errors
 
